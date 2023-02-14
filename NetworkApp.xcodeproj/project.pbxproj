@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		B438EDCD299BE44E00B7C80B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDCC299BE44E00B7C80B /* AppDelegate.swift */; };
 		B438EDCF299BE44E00B7C80B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDCE299BE44E00B7C80B /* SceneDelegate.swift */; };
-		B438EDD1299BE44E00B7C80B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDD0299BE44E00B7C80B /* ViewController.swift */; };
+		B438EDD1299BE44E00B7C80B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDD0299BE44E00B7C80B /* ImageViewController.swift */; };
 		B438EDD4299BE44E00B7C80B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B438EDD2299BE44E00B7C80B /* Main.storyboard */; };
 		B438EDD6299BE45000B7C80B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B438EDD5299BE45000B7C80B /* Assets.xcassets */; };
 		B438EDD9299BE45000B7C80B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B438EDD7299BE45000B7C80B /* LaunchScreen.storyboard */; };
+		B438EDE5299BFC2F00B7C80B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDE4299BFC2F00B7C80B /* Animal.swift */; };
+		B438EDE7299BFD3200B7C80B /* MainCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDE6299BFD3200B7C80B /* MainCollectionController.swift */; };
+		B438EDE9299BFF0C00B7C80B /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */; };
+		B4A6A8BE299C07DF00547216 /* AllDogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6A8BD299C07DF00547216 /* AllDogsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B438EDC9299BE44E00B7C80B /* NetworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B438EDCC299BE44E00B7C80B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B438EDCE299BE44E00B7C80B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B438EDD0299BE44E00B7C80B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B438EDD0299BE44E00B7C80B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		B438EDD3299BE44E00B7C80B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B438EDD5299BE45000B7C80B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B438EDD8299BE45000B7C80B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B438EDDA299BE45000B7C80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B438EDE4299BFC2F00B7C80B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		B438EDE6299BFD3200B7C80B /* MainCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionController.swift; sourceTree = "<group>"; };
+		B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		B4A6A8BD299C07DF00547216 /* AllDogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		B438EDCB299BE44E00B7C80B /* NetworkApp */ = {
 			isa = PBXGroup;
 			children = (
-				B438EDCC299BE44E00B7C80B /* AppDelegate.swift */,
-				B438EDCE299BE44E00B7C80B /* SceneDelegate.swift */,
-				B438EDD0299BE44E00B7C80B /* ViewController.swift */,
-				B438EDD2299BE44E00B7C80B /* Main.storyboard */,
-				B438EDD5299BE45000B7C80B /* Assets.xcassets */,
-				B438EDD7299BE45000B7C80B /* LaunchScreen.storyboard */,
-				B438EDDA299BE45000B7C80B /* Info.plist */,
+				B438EDE3299BFC1500B7C80B /* Model */,
+				B438EDE1299BE53300B7C80B /* ViewControllers */,
+				B438EDE2299BE54500B7C80B /* Screens */,
+				B438EDE0299BE51400B7C80B /* Supports */,
 			);
 			path = NetworkApp;
+			sourceTree = "<group>";
+		};
+		B438EDE0299BE51400B7C80B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				B438EDCC299BE44E00B7C80B /* AppDelegate.swift */,
+				B438EDCE299BE44E00B7C80B /* SceneDelegate.swift */,
+				B438EDD5299BE45000B7C80B /* Assets.xcassets */,
+				B438EDDA299BE45000B7C80B /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		B438EDE1299BE53300B7C80B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B438EDD0299BE44E00B7C80B /* ImageViewController.swift */,
+				B438EDE6299BFD3200B7C80B /* MainCollectionController.swift */,
+				B4A6A8BD299C07DF00547216 /* AllDogsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B438EDE2299BE54500B7C80B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B438EDD2299BE44E00B7C80B /* Main.storyboard */,
+				B438EDD7299BE45000B7C80B /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B438EDE3299BFC1500B7C80B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */,
+				B438EDE4299BFC2F00B7C80B /* Animal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B438EDD1299BE44E00B7C80B /* ViewController.swift in Sources */,
+				B438EDD1299BE44E00B7C80B /* ImageViewController.swift in Sources */,
+				B4A6A8BE299C07DF00547216 /* AllDogsTableViewController.swift in Sources */,
+				B438EDE5299BFC2F00B7C80B /* Animal.swift in Sources */,
+				B438EDE9299BFF0C00B7C80B /* UserActionCell.swift in Sources */,
+				B438EDE7299BFD3200B7C80B /* MainCollectionController.swift in Sources */,
 				B438EDCD299BE44E00B7C80B /* AppDelegate.swift in Sources */,
 				B438EDCF299BE44E00B7C80B /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BVXR3NMJ8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkApp/Info.plist;
+				INFOPLIST_FILE = NetworkApp/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = aidarbye.NetworkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +368,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BVXR3NMJ8K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkApp/Info.plist;
+				INFOPLIST_FILE = NetworkApp/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +381,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = aidarbye.NetworkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
