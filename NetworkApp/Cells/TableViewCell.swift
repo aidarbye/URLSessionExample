@@ -1,23 +1,21 @@
-//
-//  TableViewCell.swift
-//  NetworkApp
-//
-//  Created by Айдар Нуркин on 15.02.2023.
-//
-
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet var DogLabel: UILabel!
+    @IBOutlet var DogTableImage: UIImageView!
+    
+    func configure(with dog: Dog) {
+        DogLabel.text! = String(dog.fileSizeBytes!)
+        
+        DispatchQueue.global().async {
+            guard let stringUrl = dog.url,
+                  let imageURL = URL(string: stringUrl),
+                  let imageData = try? Data(contentsOf: imageURL) else { return }
+            
+            DispatchQueue.main.async {
+                self.DogTableImage.image = UIImage(data: imageData)
+            }
+        }
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

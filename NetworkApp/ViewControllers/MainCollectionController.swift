@@ -1,6 +1,7 @@
 import UIKit
 
 enum URLExamples: String {
+//    case random_JSON = "https://random.dog/woof.json"
     case random_JSON = "https://random.dog/woof.json"
     case random_image = "https://place.dog/300/200"
 }
@@ -40,22 +41,15 @@ class MainCollectionController: UICollectionViewController {
             performSegue(withIdentifier: "showImage", sender: nil)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "allDogs"{
+            let AllDogsVC = segue.destination as! AllDogsTableViewController
+            AllDogsVC.fetchDogs()
+        }
+    }
+    
 }
-// MARK: Доделать allDogs TableViews загрузку
-//extension MainCollectionController {
-//    private func ExampleButtonPressed() {
-//        guard let url = URL(string: URLExamples.random_JSON.rawValue) else
-//        { return }
-//        URLSession.shared.dataTask(with: url) { (data, _, _) in
-//            guard let data = data else { return }
-//            do {
-//                let dog = try JSONDecoder().decode(Dog.self, from: data)
-//            } catch let error {
-//                print(error)
-//            }
-//        }.resume()
-//    }
-//}
 
 extension MainCollectionController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
