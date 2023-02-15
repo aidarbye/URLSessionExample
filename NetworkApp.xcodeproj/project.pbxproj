@@ -17,6 +17,7 @@
 		B438EDE7299BFD3200B7C80B /* MainCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDE6299BFD3200B7C80B /* MainCollectionController.swift */; };
 		B438EDE9299BFF0C00B7C80B /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */; };
 		B4A6A8BE299C07DF00547216 /* AllDogsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6A8BD299C07DF00547216 /* AllDogsTableViewController.swift */; };
+		B4A6A8C2299CC05A00547216 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6A8C1299CC05A00547216 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B438EDE6299BFD3200B7C80B /* MainCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionController.swift; sourceTree = "<group>"; };
 		B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		B4A6A8BD299C07DF00547216 /* AllDogsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsTableViewController.swift; sourceTree = "<group>"; };
+		B4A6A8C1299CC05A00547216 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		B438EDCB299BE44E00B7C80B /* NetworkApp */ = {
 			isa = PBXGroup;
 			children = (
+				B4A6A8BF299CC03000547216 /* Cells */,
 				B438EDE3299BFC1500B7C80B /* Model */,
 				B438EDE1299BE53300B7C80B /* ViewControllers */,
 				B438EDE2299BE54500B7C80B /* Screens */,
@@ -105,10 +108,18 @@
 		B438EDE3299BFC1500B7C80B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */,
 				B438EDE4299BFC2F00B7C80B /* Animal.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4A6A8BF299CC03000547216 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B438EDE8299BFF0C00B7C80B /* UserActionCell.swift */,
+				B4A6A8C1299CC05A00547216 /* TableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B438EDD1299BE44E00B7C80B /* ImageViewController.swift in Sources */,
+				B4A6A8C2299CC05A00547216 /* TableViewCell.swift in Sources */,
 				B4A6A8BE299C07DF00547216 /* AllDogsTableViewController.swift in Sources */,
 				B438EDE5299BFC2F00B7C80B /* Animal.swift in Sources */,
 				B438EDE9299BFF0C00B7C80B /* UserActionCell.swift in Sources */,
